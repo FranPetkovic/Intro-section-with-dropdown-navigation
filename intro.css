@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --skoroBijela:hsl(0, 0%, 98%);
+    --siva:hsl(0, 0%, 41%);
+    --skoroCrna:hsl(0, 0%, 8%);
+}
+body{
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--skoroBijela);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.div-lijevi{
+    display: grid;
+    grid-template-columns:3fr repeat(4,2fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--skoroCrna);
+    gap: 20px;
+}
+.div-lijevi div{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.div-lijevi>svg{
+    margin-left: 30px;
+    transform: translateY(25%);
+}
+.div-desni{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    gap: 50px;
+}
+.div-desni a{
+    color: var(--skoroCrna);
+}
+.div-desni button{
+    border: 1px solid var(--skoroCrna);
+    background-color: var(--skoroBijela);
+    padding: 10px;
+    margin-right: 50px;
+    width: 100px;
+    border-radius: 20px;
+    transform: translateY(25%);
+}
+.main{
+    max-width: 1200px;
+    display: flex;
+    margin: 100px auto;
+    gap: 0px;
+}
+.main-div1{
+    width: 650px;
+    margin-top: 110px;
+}
+.main-div2{
+    width: 450px;
+}
+.main-div2 img{
+    width: 450px;
+}
+.main-div1 h1{
+    font-size: 80px;
+}
+.main-div1 p{
+    margin-top: 50px;
+    width: 70%;
+}
+.main-div1 button{
+    margin-top: 50px;
+    border: none;
+    background-color: var(--skoroCrna);
+    color: var(--skoroBijela);
+    padding: 15px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 1px solid var(--skoroBijela);
+}
+.main-div1-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
+}
+.features{
+    position: relative;
+}
+.dropdownMenu{
+    position: absolute;
+    top: 25px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 15px;
+    display: none!important;
+}
+.dropdown:hover .dropdownMenu{
+    display:inherit!important;
+}
+
+.gore{
+    display: none;
+}
+.dropdown:hover .gore{
+display: block !important;
+}
+.dropdown:hover .dole{
+display: none!important;
+}
+.rndDiv{
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    width: 90px;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    display: none!important;
+    font-size: 15px;
+}
+.company:hover>.rndDiv{
+    display:inherit!important;
+}
+.gore2{
+    display: none;
+}
+.company:hover .gore2{
+display: block !important;
+}
+.company:hover .dole2{
+display: none!important;
+}
+.features:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+.company:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+.careers:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+.about:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+.div-desni>a:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+.div-desni>button:hover{
+    color: #000000;
+    background-color: var(--skoroCrna);
+    color: var(--skoroBijela);
+}
+.main-div1>button:hover{
+    background-color: var(--skoroBijela);
+    color: var(--skoroCrna);
+    border: 1px solid var(--skoroCrna);
+}
+.MakeRemote{
+    display: none;
+}
+.lovro{
+    display: none;
+}
+@media only screen and (max-width: 375px)  {
+
+    .main{
+        flex-direction:column-reverse;
+        width: 300px;
+        margin-left: 20px;
+    }
+    .main-div2 img{
+        width: 250px;
+    }
+    .paragraf{
+        font-size: 15px!important;
+        width: 300px!important;
+        text-align: center;
+        }
+    .main-div1 .MakeRemotr1{
+        display: none;
+    }
+    .main-div1 button{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .main-div1 div{
+        margin-top: 40px;
+    }
+    .MakeRemote{
+        display: block;
+        font-size: 30px!important;
+    }
+    .div-desni a{
+        display: none;
+    }
+    .div-desni button{
+        display: none;
+    }
+    .div-desni svg{
+        margin-left: 375px;
+    }
+    .div-lijevi svg{
+        margin-left: -10px;
+    }
+
+    .fran3{
+        font-size: 100px;
+    }
+    .dropdown{
+        display: none!important;
+    }
+    
+    .company{
+        display: none!important;
+    }
+    
+    .careers{
+        display: none!important;
+    }
+    
+    .about{
+        display: none!important;
+    }
+    .main-div1-div{
+        gap: 0px;
+    }
+    .lovro{
+        display: inherit!important;
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+}
